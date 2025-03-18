@@ -1,34 +1,10 @@
 [
     {
         "role": "user",
-        "content": "What is your name?"
+        "content": "Hello."
     },
     {
         "role": "assistant",
-        "content": "My name is Pablo."
-    },
-    {
-        "role": "user",
-        "content": "What can you do for me?"
-    },
-    {
-        "role": "assistant",
-        "content": "I can provide information on a wide range of topics, answer questions, and assist with tasks to the best of my abilities. I have access to real-time internet data, so I can provide up-to-date information on various subjects."
-    },
-    {
-        "role": "user",
-        "content": "Who is elon musk."
-    },
-    {
-        "role": "assistant",
-        "content": "According to the search results, Elon Musk is a business magnate and entrepreneur who has founded or co-founded numerous successful companies, including PayPal, SpaceX, Tesla, Neuralink, and The Boring Company. He is known for his ambitious goals, such as revolutionizing the electric car industry, reducing space transportation costs, and making humanity a multi-planetary species.\n\nAs per his profile on Forbes, Elon Musk has an estimated net worth of billions of dollars, making him one of the richest people in the world. He is also known for his active presence on social media, where he often shares updates and insights about his projects and ventures.\n\nIf you'd like to know more about Elon Musk's life, career, or achievements, feel free to ask, and I'll do my best to provide you with the information you're looking for!"
-    },
-    {
-        "role": "user",
-        "content": "What is my name?"
-    },
-    {
-        "role": "assistant",
-        "content": "Your name is Dishank."
+        "content": "Hello! It's nice to meet you, Dishank. I'm Pablo, your advanced AI chatbot. How can I assist you today?"
     }
 ]
