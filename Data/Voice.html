@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Voice Recognition</title>
+</head>
+<body>
+    <button id="start">Start</button>
+    <button id="end">Stop</button>
+    <p id="output"></p>
+    <script>
+        if (!window.SpeechRecognition && !window.webkitSpeechRecognition) {
+            document.getElementById("output").innerText = "Speech recognition not supported!";
+        } else {
+            var recognition = new (window.SpeechRecognition || window.webkitSpeechRecognition)();
+            recognition.lang = "en";
+            recognition.continuous = false;  // Stops after speaking
+            recognition.interimResults = false;  // Prevents partial words
+            
+            recognition.onresult = function(event) {
+                document.getElementById("output").innerText = event.results[0][0].transcript;
+                console.log("Recognized:", event.results[0][0].transcript);
+            };
+
+            recognition.onerror = function(event) {
+                console.error("Recognition Error:", event.error);
+                document.getElementById("output").innerText = "Error!";
+            };
+
+            document.getElementById("start").onclick = function() { 
+                console.log("🎤 Starting Speech Recognition...");
+                recognition.start();
+            };
+            document.getElementById("end").onclick = function() { 
+                console.log("🛑 Stopping Speech Recognition...");
+                recognition.stop();
+            };
+        }
+    </script>
+</body>
+</html>
